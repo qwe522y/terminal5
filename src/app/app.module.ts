@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TopProviderButComponent } from './top-provider-but.component';
+import { ProvidersService } from './providers.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { TopProviderButComponent } from './top-provider-but.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ProvidersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
